@@ -1,5 +1,3 @@
-const arr = ['hello', 'world', 23, '23', null];
-let type = 'string';
 function filterBy(arr, type) {
 if (type == "null") {
     return arr.filter( e => e !== null)
@@ -7,4 +5,4 @@ if (type == "null") {
 return arr.filter((e => typeof(e) !== type))
 }
 
-console.log(filterBy(arr, type))
+console.log(filterBy(['hello', 'world', 23, '23', null], 'string'))
